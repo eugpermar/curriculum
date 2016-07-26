@@ -1,0 +1,164 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{blue}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % para seleccionar la fuente por omision, use '\sfdefault' para la fuente sans serif, '\rmdefault' para la fuente roman, o cualquier nombre de fuente
+%\nopagenumbers{}                             % elimine el comentario para suprimir la numeracion automatica de las paginas para CVs mayores a una pagina
+
+
+% character encoding
+\usepackage[spanish,es-noshorthands,es-lcroman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Eugenio}
+\familyname{Pérez Martín}
+\title{Graduado en Ingeniería de las Tecnologías de Telecomunicaciones}               % optional, remove the line if not wanted
+\address{C/Getafe 25, San Juan de Aznalfarache, Sevilla}{41920}    % optional, remove the line if not wanted
+\mobile{660110489}                     % optional, remove the line if not wanted
+\phone{954761048}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{eupm90@gmail.com}                      % optional, remove the line if not wanted
+\renewcommand{\homepagesymbol}{\raisebox{-1pt}{\includegraphics[height=9pt]{linkedin}}}
+\homepage{https://www.linkedin.com/in/eugenioperez}                % optional, remove the line if not wanted
+\newcommand{\githubsymbol}{\raisebox{-1pt}{\includegraphics[height=9pt]{github}}}
+\extrainfo{\githubsymbol~\httplink{https://github.com/eugpermar}} % optional, remove the line if not wanted
+% @TODO Falta la foto
+\photo[64pt]{imagenes/foto.jpg}               % '64pt' is the height the picture must be resized to
+					      % and 'picture' is the name of the picture file;
+					      % optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Educación}
+\cventry{1996--2006}{Educación Primaria y Secundaria}{Santa Teresa de Jesús}{San Juan de Aznalfarache, Sevilla}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2006--2009}{Bachillerato}{I.E.S. Néstor Almendros}{Tomares, Sevilla}{}{}
+\cventry{2009--2010}{Grado en Física (Primer curso completo)}{Universidad de Sevilla}{}{}{}
+\cventry{2010--Actualmente}{Grado en Ingeniería de Tecnologías de Comunicación}{Universidad de
+Sevilla}{}{}{}
+\cventry{2011}{Master en formación informática}{Infosur consultores}{}{}{}
+
+% \section{Master thesis}
+% \cvline{title}{\emph{Title}}
+% \cvline{supervisors}{Supervisors}
+% \cvline{description}{\small Short thesis abstract}
+
+\section{Experiencia laboral}
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
+% \cventry{2006--2007}{Técnico informático}{Infored Pro}{Cuenta propia}{}{Técnico en una tienda de
+% informática. Principalmente, reparaciones de software y harware, asesoría y mantenimiento de PCs de
+% pequeños negocios cercanos.\newline}
+\subsection{Vocacional}
+\cventry{2008-Actualidad}{Diseñador web}{Cuenta propia}{}{}{Elaboración y mantenimiento de páginas
+web.\newline}
+\cventry{2006-Actualidad}{Técnico informático}{Cuenta propia}{}{}{Reparación y mantenimiento de
+PCs de particulares y pequeños negocios.\newline}
+\cventry{2009-Actualidad}{Programador}{Cuenta propia}{}{}{Diseño y mantenimiento de diversos
+programas de gestión de negocios, extensibles a negocios similares:
+\begin{itemize}
+    \item Joyería (2009).
+    \item Peritaje (2011).
+\end{itemize}
+}
+
+
+% \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Idiomas}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+\cvlanguage{Inglés}{Medio-Avanzado}{}
+
+%\section{Computer skills}
+%\cvcomputer{Ofimática}{Suite MS Offfice, OpenOffice / LibreOffice}{nivel avanzado}{s}
+%\cvcomputer{Sistemas Operativos}{UNIX (Linux) y Windows, nivel medio-avanzado}
+%\cvcomputer{Lenguajes de programación}{C, C++, python, php y javascript a nivel medio-alto. Nociones de C\#, Java, assmebly (x86, motorola 6800), SQL}
+%\cvcomputer{Frameworks de desarrollo}{Experiencia con Qt (Nokia), como framework para C++ y python (PyQt).}
+
+\section{Habilidades informáticas}
+\cvline{Ofimática}{Suite MS Offfice y LibreOffice, nivel avanzado}
+\cvline{Sistemas operativos}{Unix/Linux y Windows nivel avanzado}
+\cvline{Lenguajes de programación}{C/C++ nivel avanzado, python nivel medio, ensamblador y bash nivel medio, nociones de ensamblador, ruby y diversos lenguajes de programación web}
+\cvline{CVS}{Git nivel alto, experiencia con SVN}
+%\cvline{hobby 3}{\small Description}
+
+\section{Información Extra}
+\cvlistitem{Permisos de conducir A-2 y B. Vehículo propio.}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
