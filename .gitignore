@@ -5,3 +5,8 @@
 /template.out
 /template.pdf
 /template.synctex.gz
+/template.bbl
+/template.blg
+
+# Temporales
+/template.*~

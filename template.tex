@@ -148,6 +148,13 @@ ingesta de datos de monitorización y a sistemas IDS.\newline
 \cvline{CVS}{Git nivel alto, experiencia con SVN}
 %\cvline{hobby 3}{\small Description}
 
+% Publications from a BibTeX file without multibib
+\renewcommand{\refname}{Publicaciones}
+\renewcommand*{\bibliographyitemlabel}{\arabic{enumiv}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publicaciones}       % 'publications' is the name of a BibTeX file
+
 \section{Información Extra}
 \cvlistitem{Permisos de conducir A y B. Vehículo propio.}
 %\cvlistitem[+]{Item 3}            % optional other symbol
